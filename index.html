@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333; /* Set the background color of the header */
+            color: #fff; /* Set the text color of the header */
+            padding: 20px; /* Add padding to the header for better styling */
+            text-align: center; /* Center align text within the header */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Catechist's Corner</h1>
+        <p>All you need to know about catechesis...and then some!</p>
+    </header>
+
+   
+        <h2>What is Catechesis?</h2>
+        <p>The Church has always considered catechesis one of her primary tasks, for, before Christ ascended to His Father after His resurrection, He gave the apostles a final command - to make disciples of all nations and to teach them to observe all that He had commanded. He thus entrusted them with the mission and power to proclaim to humanity what they had heard, what they had seen with their eyes, what they had looked upon and touched with their hands, concerning the Word of Life. He also entrusted them with the mission and power to explain with authority what He had taught them, His words and actions, His signs and commandments. And He gave them the Spirit to fulfill this mission.
+
+Very soon the name of catechesis was given to the whole of the efforts within the Church to make disciples, to help people to believe that Jesus is the Son of God, so that believing they might have life in His name, and to educate and instruct them in this life and thus build up the Body of Christ. The Church has not ceased to devote her energy to this task (Catechesi Tradendae no.1) </p>
+
+        <p>Catechesis is an education of children, young people and adults in the faith, which includes especially the teaching of Christian doctrine imparted, generally speaking, in an organic and systematic way, with a view to initiating the hearers into the fullness of Christian life (CT no. 18)</p>
+   
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #document-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .sublink {
+            display: block;
+            margin-top: 10px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>More on Catechesis...</h2>
+
+    <!-- Buttons -->
+    <button onclick="openDocument('http://www.scborromeo.org/ccc/ccc_toc.htm')">Catechism of the Catholic Church</button>
+    <button onclick="openDocument('https://www.papalencyclicals.net/paul06/gencatdi.htm')">Gen. Catechetical Directory</button>
+    <button onclick="openDocument('https://www.newadvent.org/fathers/1303.htm')">De Catechizandis Rudibus</button>
+    <button onclick="openDocument('https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20210510_antiquum-ministerium.html')">Antiquum Ministerium</button>
+    <button onclick="openDocument('https://www.syromalabarcatechesischicago.org/')">Syro Malabar Catechesis</button>
+
+    <!-- Display Area for Documents -->
+    <div id="document-container"></div>
+
+    <script>
+        // Function to open documents in a new page
+        function openDocument(url) {
+            // Open the main page
+            var mainPage = window.open(url, '_blank');
+
+            // Add sublinks dynamically
+            var sublinks = ['Sublink 1', 'Sublink 2', 'Sublink 3'];
+            sublinks.forEach(function(sublink) {
+                var sublinkElement = document.createElement('div');
+                sublinkElement.className = 'sublink';
+                sublinkElement.textContent = sublink;
+                sublinkElement.onclick = function() {
+                    // Example: Open sublink in the same window
+                    mainPage.location.href = 'https://example.com/' + sublink.toLowerCase();
+                };
+                mainPage.document.body.appendChild(sublinkElement);
+            });
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Headings with Subheadings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Main Heading 1</h2>
+    <ul>
+        <li><a href="https://example.com/page1">Subheading 1</a></li>
+        <li><a href="https://example.com/page2">Subheading 2</a></li>
+        <li><a href="https://example.com/page3">Subheading 3</a></li>
+        <li><a href="https://example.com/page4">Subheading 4</a></li>
+    </ul>
+
+    <h2>Main Heading 2</h2>
+    <ul>
+        <li><a href="https://example.com/page5">Subheading A</a></li>
+        <li><a href="https://example.com/page6">Subheading B</a></li>
+        <li><a href="https://example.com/page7">Subheading C</a></li>
+        <li><a href="https://example.com/page8">Subheading D</a></li>
+    </ul>
+
+    <h2>Main Heading 3</h2>
+    <ul>
+        <li><a href="https://example.com/page9">Subheading X</a></li>
+        <li><a href="https://example.com/page10">Subheading Y</a></li>
+        <li><a href="https://example.com/page11">Subheading Z</a></li>
+        <li><a href="https://example.com/page12">Subheading W</a></li>
+    </ul>
+
+   </main>
+
+    <footer>
+        <p>&copy; 2023 The Catechist. All rights reserved.</p>
+    </footer>
+ 
+
+</body>
+</html>
